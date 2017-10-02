@@ -11,24 +11,74 @@
 }
 
 .footer__column {
-  width: 170px;
+  width: 180px;
 }
 
 .footer__block {
   width: 270px;
+  
+  &--advice .footer__link {
+    padding-right: 35px;
+  }
 }
 
 .footer__h3 {
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .footer__link {
+  display: block;
   color: @font-grey;
   font-size: 14px;
   font-weight: 400;
+  margin-bottom: 15px;
   
   &:hover,
   &:active {
     text-decoration: underline;
   }
+}
+
+.footer__city {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer__address {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 400;
+  color: @font-grey;
+}
+
+.footer__phone {
+  display: block;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer__logo {
+  font-family: "Roboto", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: @font-grey;
+  
+  span {
+    display: block;
+    font-size: 34px;
+    line-height: 48px;
+    color: @font-orange;
+  }
+}
+
+.footer__copyright {
+  font-size: 12px;
+  line-height: 16px;
+  color: @font-grey;
 }
