@@ -1,0 +1,71 @@
+.card__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card__link {
+  display: block;
+  width: 190px;
+  height: 150px;
+  padding: 30px 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: @font-dark;
+  background-color: rgb(248, 248, 248);
+  background-repeat: no-repeat;
+  
+  span {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: none;
+  }
+}
+
+.card__item {
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  
+  &:first-child .card__link {
+    background-image: url(../img/menu-1.png);
+    background-size: 130px 90px;
+    background-position: right -15px bottom -5px;
+  }
+  
+  &:nth-child(2) .card__link {
+    background-image: url(../img/menu-2.png);
+    background-size: 90px 90px;
+    background-position: right -5px bottom -5px;
+  }
+  
+  &:nth-child(3) .card__link {
+    background-image: url(../img/menu-3.png);
+    background-size: 95px 90px;
+    background-position: right -15px bottom -5px;
+  }
+  
+  &:nth-child(4) .card__link {
+    background-image: url(../img/menu-4.png);
+    background-size: 92px 90px;
+    background-position: right -5px bottom -5px;
+  }
+  
+  &:nth-child(5) .card__link {
+    background-image: url(../img/menu-5.png);
+    background-size: 127px 81px;
+    background-position: right -5px bottom -5px;
+  }
+  
+  &:nth-child(6) .card__link {
+    background-image: url(../img/menu-6.png);
+    background-size: 81px 90px;
+    background-position: right -5px bottom -5px;
+  }
+  
+  &:hover {
+    margin-top: 0;
+  }
+}

@@ -8,8 +8,9 @@
 </head>
 <body>
   <header class="header">
-    <nav class="menu">
-      <div class="menu_wrap wrapper">
+    <nav class="menu menu__closed">
+      <div class="menu__wrap wrapper">
+        <button class="menu__btn"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="menu__list">
           <li class="menu__item">
             <a href="#" class="menu__link">О нас</a>
@@ -36,9 +37,11 @@
             <a href="#" class="menu__link">Контакты</a>
           </li>
         </ul>
-        <div class="menu__cart">
-          <a href="#" class="menu__price"><span>5</span>43950 &#8381;</a>
-        </div>
+        <a href="#" class="menu__cart">
+          <img src="img/icon-cart.png" alt="Корзина" width="22" height="20">
+          <span class="menu__number">5</span>
+          <span class="menu__price">43950 &#8381;</span>
+        </a>
       </div>
     </nav>
     <div class="header__middle wrapper">
@@ -50,14 +53,16 @@
       <div class="header__address">
         <div class="header__city">
           <span>Ваш город:</span>
+          <input type="checkbox" name="city" id="city">
           <ul class="header__list">
-            <li><a href="#" class="header__drop">Иркутск</a></li>
+            <li><a class="header__drop header__drop--active">Иркутск</a></li>
             <li><a href="#" class="header__drop">Красноярск</a></li>
             <li><a href="#" class="header__drop">Улан-Удэ</a></li>
             <li><a href="#" class="header__drop">Другой</a></li>
           </ul>
+          <label for="city" class="header__label"></label>
         </div>
-        <a href="#" class="header__time">Адреса и часы работы</a>
+        <a href="#" class="header__time"><span>Адреса и часы работы</span></a>
       </div>
       <div class="header__phone">
         <a href="Tel:+73952908051" class="header__tel">8 (3952) 90 80 51</a>
@@ -73,7 +78,7 @@
           <a href="#" class="card__link">кладка<span>печей, каминов, барбекю</span></a>
         </li>
         <li class="card__item">
-          <a href="#" class="card__link">ремонт Отделка</a>
+          <a href="#" class="card__link">ремонт<br>Отделка</a>
         </li>
         <li class="card__item">
           <a href="#" class="card__link">Консультация<span>проекты, сметы, выезд мастера</span></a>
@@ -82,7 +87,7 @@
           <a href="#" class="card__link">доставка<span>грузчики, возврат, обмен</span></a>
         </li>
         <li class="card__item">
-          <a href="#" class="card__link">оплата кредит</a>
+          <a href="#" class="card__link">оплата<br>кредит</a>
         </li>
       </ul>
     </nav>
