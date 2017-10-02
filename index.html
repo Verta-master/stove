@@ -8,7 +8,7 @@
 </head>
 <body>
   <header class="header">
-    <nav class="menu menu__closed">
+    <nav class="menu menu--closed">
       <div class="menu__wrap wrapper">
         <button class="menu__btn"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="menu__list">
@@ -49,24 +49,26 @@
         <img src="img/logo.svg" alt="Logo" class="logo__img" width="96" height="59">
         <p class="logo__name"><span>Печной мир</span>первый магазин товаров для печей и  каминов</p>
       </div>
-      <p class="header__title"><span>печи камины барбекю</span>всё для кладки в одном месте</p>
-      <div class="header__address">
-        <div class="header__city">
-          <span>Ваш город:</span>
-          <input type="checkbox" name="city" id="city">
-          <ul class="header__list">
-            <li><a class="header__drop header__drop--active">Иркутск</a></li>
-            <li><a href="#" class="header__drop">Красноярск</a></li>
-            <li><a href="#" class="header__drop">Улан-Удэ</a></li>
-            <li><a href="#" class="header__drop">Другой</a></li>
-          </ul>
-          <label for="city" class="header__label"></label>
+      <div class="header__wrap">
+        <p class="header__title"><span>печи камины барбекю</span>всё для кладки в одном месте</p>
+        <div class="header__address">
+          <div class="header__city">
+            <span>Ваш город:</span>
+            <input type="checkbox" name="city" id="city">
+            <ul class="header__list">
+              <li><a class="header__drop header__drop--active">Иркутск</a></li>
+              <li><a href="#" class="header__drop">Красноярск</a></li>
+              <li><a href="#" class="header__drop">Улан-Удэ</a></li>
+              <li><a href="#" class="header__drop">Другой</a></li>
+            </ul>
+            <label for="city" class="header__label"></label>
+          </div>
+          <a href="#" class="header__time"><span>Адреса и часы работы</span></a>
         </div>
-        <a href="#" class="header__time"><span>Адреса и часы работы</span></a>
-      </div>
-      <div class="header__phone">
-        <a href="Tel:+73952908051" class="header__tel">8 (3952) 90 80 51</a>
-        <button type="button" class="header__call">Обратный звонок</button>
+        <div class="header__phone">
+          <a href="Tel:+73952908051" class="header__tel">8 (3952) 90 80 51</a>
+          <button type="button" class="header__call">Обратный звонок</button>
+        </div>
       </div>
     </div>
     <nav class="card wrapper">
@@ -474,9 +476,9 @@
           <li><a href="#" class="footer__link">Часто задаваемые вопросы</a></li>
         </ul>
       </div>
-      <div class="footer__block">
+      <div class="footer__block footer__block--advice">
         <h3 class="footer__h3">СОВЕТЫ СПЕЦИАЛИСТОВ</h3>
-        <a href="#" class="footer__link">В этом разделе вы сможете ознакомиться правилами эксплуатаци и ухода за очагами, камминами, печами и отопительными комплексами</a>
+        <a href="#" class="footer__link">В этом разделе вы сможете ознакомиться правилами эксплуатации и ухода за очагами, каминами, печами и отопительными комплексами</a>
       </div>
       <section class="footer__block">
         <h3 class="footer__h3">Контакты</h3>
@@ -489,27 +491,27 @@
         <ul class="social">
           <li class="social__item">
             <a href="#" class="social__link">
-              <span class="visually-hidden">Вконтакте</span>
+              <img src="img/vk-logo.svg" alt="Вконтакте" class="social__img" width="22" height="12">
             </a>
           </li>
           <li class="social__item">
             <a href="#" class="social__link">
-              <span class="visually-hidden">Facebook</span>
+              <img src="img/facebook-logo.svg" alt="Facebook" class="social__img" width="14" height="22">
             </a>
           </li>
           <li class="social__item">
             <a href="#" class="social__link">
-              <span class="visually-hidden">Youtube</span>
+              <img src="img/youtube.svg" alt="Youtube" class="social__img" width="20" height="15">
             </a>
           </li>
           <li class="social__item">
             <a href="#" class="social__link">
-              <span class="visually-hidden">Одноклассники</span>
+              <img src="img/odnoklassniki-logo.svg" alt="Одноклассники" class="social__img" width="15" height="22">
             </a>
           </li>
           <li class="social__item">
             <a href="#" class="social__link">
-              <span class="visually-hidden">Инстаграм</span>
+              <img src="img/instagram-logo.svg" alt="Инстаграм" class="social__img" width="18" height="18">
             </a>
           </li>
         </ul>
@@ -519,6 +521,45 @@
     </div>
   </footer>
   
-<!--  <script src="js/script.js"></script>-->
+  <div style="display: none;">
+    <div class="modal" id="modal">
+      <button type="button" class="modal__close arcticmodal-close"><span class="visually-hidden">Закрыть</span></button>
+      <h2 class="title-h2">Заказать обратный звонок</h2>
+      <form action="#" method="post" class="modal__form">
+        <div class="modal__field">
+          <label for="name" class="modal__label">Ваше имя:</label>
+          <input type="text" name="name" id="name" class="modal__input" required>
+        </div>
+        <div class="modal__field">
+          <label for="phone" class="modal__label">Телефон:</label>
+          <input type="tel" name="phone" id="phone" class="modal__input" required>
+        </div>
+        <div class="modal__field">
+          <label for="time" class="modal__label">Время звонка:</label>
+          <input type="text" name="time" id="time" class="modal__input">
+        </div>
+        <button type="submit" class="modal__btn">Заказать</button>
+      </form>
+    </div>
+  </div>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <script>
+    $(".header__call").click(function(){
+      $(function(){
+        $('#modal').arcticmodal({
+          overlay: {
+          css: {
+            backgroundColor: "#000",
+            opacity: .8,
+            }
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
