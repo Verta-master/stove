@@ -1,0 +1,47 @@
+.action {
+  padding-top: 65px;
+  padding-bottom: 40px;
+}
+
+.action__block {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.action__link {
+  display: block;
+  margin-right: 30px;
+  
+  &:nth-of-type(3n) {
+    margin-right: 0;
+  }
+  
+  &:first-of-type {
+    width: 570px;
+  }
+  
+  &:nth-of-type(2),
+  &:nth-of-type(3) {
+    width: 270px;
+  }
+  
+  &:hover,
+  &:active {
+    .action__title {
+      color: @font-orange;
+    }
+  }
+}
+
+.action__img {
+  display: block;
+  height: 270px;
+  width: auto;
+}
+
+.action__title {
+  font-size: 18px;
+  font-weight: 400;
+  color: @font-dark;
+}
