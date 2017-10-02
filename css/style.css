@@ -594,6 +594,10 @@ a {
   color: #fff;
   font-size: 16px;
 }
+.menu__price:hover,
+.menu__price:active {
+  color: #de7627;
+}
 .menu__number {
   display: block;
   color: #fff;
@@ -702,4 +706,133 @@ a {
 }
 .card__item:hover {
   margin-top: 0;
+}
+.promo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding-top: 55px;
+  padding-bottom: 50px;
+}
+.promo__text {
+  width: 570px;
+}
+.promo__title {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #666666;
+  padding-left: 12px;
+  position: relative;
+}
+.promo__title::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background-image: linear-gradient(90deg, #f9d423 0%, #fc913a 12%, #ff4e50 100%);
+  transform: rotate(-45deg);
+}
+.promo__list {
+  padding-bottom: 20px;
+}
+.title-h1,
+h1 {
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 400;
+}
+.title-h2,
+h2 {
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+}
+.subtitle {
+  font-size: 14px;
+  text-align: center;
+  padding: 0 100px;
+  margin-bottom: 35px;
+}
+.link {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  color: #de7627;
+}
+.link span {
+  border-bottom: 1px solid #de7627;
+}
+.link:hover span,
+.link:active span {
+  border-bottom: none;
+}
+.sample {
+  background-color: #f8f8f8;
+  padding-top: 40px;
+  padding-bottom: 145px;
+}
+.sample__list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.sample__img {
+  display: block;
+  border-radius: 6px;
+}
+.sample__title {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.sample__price {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.sample__price span {
+  font-size: 18px;
+  font-weight: 500;
+}
+.sample__link {
+  font-size: 15px;
+}
+.sample__wrap {
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  padding-left: 20px;
+  z-index: 5;
+  transition: 0.5s ease-in-out;
+}
+.sample__overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.sample__item {
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.sample__item:hover .sample__overlay {
+  display: block;
+}
+.sample__item:hover .sample__wrap {
+  bottom: 20px;
+  transition: 0.5s ease-in-out;
 }
