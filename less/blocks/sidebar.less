@@ -1,0 +1,178 @@
+.wrapper--internal {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+.main {
+  width: 870px;
+}
+
+.sidebar {
+  width: 270px;
+  padding-bottom: 60px;
+}
+
+.sidebar__check,
+.sidebar__input {
+  display: none;
+}
+
+.sidebar__label {
+  display: block;
+  width: 270px;
+  height: 35px;
+  font-weight: 500;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: #fff;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  background-image: url(../img/sale.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  
+  span {
+    color: #000;
+    padding-right: 10px;
+  }
+  
+  &::after {
+    content: "sale";
+    position: absolute;
+    top: 0;
+    right: 57px;
+    font-size: 11px;
+    transform: rotate(-65deg);
+  }
+}
+
+.sidebar__block {
+  background-color: @bg-grey;
+  margin-bottom: 30px;
+}
+
+.sidebar__part {
+  padding: 20px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.sidebar__h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.sidebar__link {
+  font-size: 14px;
+  font-weight: 400;
+  color: @font-dark;
+  
+  &:hover,
+  &:active {
+    color: @font-orange;
+  }
+}
+
+.sidebar__item {
+  padding-left: 10px;
+  margin-bottom: 20px;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.sidebar__field {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar__arrow {
+  display: block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-image: url(../img/arrow-orange.png);
+  background-size: 10px 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sidebar__dropdown {
+  padding-left: 10px;
+  display: none;
+}
+
+.sidebar__check:checked ~ .sidebar__dropdown {
+  display: block;
+}
+
+.sidebar__check:checked ~ .sidebar__field .sidebar__arrow {
+  transform: rotate(180deg);
+}
+
+.sidebar__title {
+  font-size: 19px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.sidebar__name {
+  margin-top: 0;
+}
+
+.sidebar__text {
+  margin-top: 20px;
+}
+
+.sidebar__border {
+  background-image: url(../img/bg-sidebar.png);
+}
+
+.sidebar__pic {
+  font-size: 22px;
+  font-weight: 400;
+  padding-left: 75px;
+  text-align: left;
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 70px;
+    height: 58px;
+    background-image: url(../img/question.png);
+    background-repeat: no-repeat;
+  }
+}
+
+.sidebar__card {
+  padding: 20px 15px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 4px;
+}
+
+.sidebar__question {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sidebar__info {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
