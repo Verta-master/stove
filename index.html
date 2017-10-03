@@ -412,17 +412,48 @@
       </div>
     </section>
     
-    <section class="review wrapper">
+    <section class="review">
       <h2 class="title-h2">отзывы и пожелания</h2>
-      <div class="slide">
-        <div class="review__block">
-          <p class="review__text">Требовался монтаж дымохода внутри кирпичной шахты коттеджа.Рубцов В. молодец, хороший специалист.Я проверил работу. Всё отлично, без опоздания, сам отзванивался, сам приезжал. Никаких нареканий.</p>
-          <a href="#" class="link review__link">Отзыв полностью</a>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="review__block">
+              <p class="review__text">Требовался монтаж дымохода внутри кирпичной шахты коттеджа.Рубцов В. молодец, хороший специалист.Я проверил работу. Всё отлично, без опоздания, сам отзванивался, сам приезжал. Никаких нареканий.</p>
+              <a href="#" class="link review__link"><span>Отзыв полностью</span></a>
+            </div>
+            <p class="review__name">Николай Иванов</p>
+            <time datetime="2017-09-12T12:37:00+03:00" class="review__date">12 сентября 2017</time>
+          </div>
+          <div class="swiper-slide">
+            <div class="review__block">
+              <p class="review__text">Требовался монтаж дымохода внутри кирпичной шахты коттеджа.Рубцов В. молодец, хороший специалист.Я проверил работу. Всё отлично, без опоздания, сам отзванивался, сам приезжал. Никаких нареканий.</p>
+              <a href="#" class="link review__link"><span>Отзыв полностью</span></a>
+            </div>
+            <p class="review__name">Николай Иванов</p>
+            <time datetime="2017-09-12T12:37:00+03:00" class="review__date">12 сентября 2017</time>
+          </div>
+          <div class="swiper-slide">
+            <div class="review__block">
+              <p class="review__text">Требовался монтаж дымохода внутри кирпичной шахты коттеджа.Рубцов В. молодец, хороший специалист.Я проверил работу. Всё отлично, без опоздания, сам отзванивался, сам приезжал. Никаких нареканий.</p>
+              <a href="#" class="link review__link"><span>Отзыв полностью</span></a>
+            </div>
+            <p class="review__name">Николай Иванов</p>
+            <time datetime="2017-09-12T12:37:00+03:00" class="review__date">12 сентября 2017</time>
+          </div>
+          <div class="swiper-slide">
+            <div class="review__block">
+              <p class="review__text">Требовался монтаж дымохода внутри кирпичной шахты коттеджа.Рубцов В. молодец, хороший специалист.Я проверил работу. Всё отлично, без опоздания, сам отзванивался, сам приезжал. Никаких нареканий.</p>
+              <a href="#" class="link review__link"><span>Отзыв полностью</span></a>
+            </div>
+            <p class="review__name">Николай Иванов</p>
+            <time datetime="2017-09-12T12:37:00+03:00" class="review__date">12 сентября 2017</time>
+          </div>
         </div>
-        <p class="review__name">Николай Иванов</p>
-        <time datetime="2017-09-12T12:37:00+03:00" class="review__date">12 сентября 2017</time>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
-      <a href="#" class="link">Добавить отзыв</a>
+      
+      <a href="#" class="link link--center"><span>Добавить отзыв</span></a>
     </section>
   </main>
   
@@ -545,12 +576,13 @@
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+  <script src="js/swiper.jquery.min.js"></script>
   <script src="js/script.js"></script>
 
   <script>
     $(".header__call").click(function(){
       $(function(){
-        $('#modal').arcticmodal({
+        $("#modal").arcticmodal({
           overlay: {
           css: {
             backgroundColor: "#000",
@@ -559,6 +591,15 @@
           }
         });
       });
+    });
+  </script>
+  
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      nextButton: ".swiper-button-next",
+      prevButton: ".swiper-button-prev",
+      slidesPerView: "auto",
+      spaceBetween: 30
     });
   </script>
 </body>
