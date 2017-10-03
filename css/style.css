@@ -1125,9 +1125,13 @@ h2 {
   padding-right: 35px;
 }
 .footer__h3 {
+  display: block;
+  font-size: 15px;
+  line-height: 22px;
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 10px;
+  margin-top: 17px;
 }
 .footer__link {
   display: block;
@@ -1182,6 +1186,9 @@ h2 {
   line-height: 16px;
   color: #d2d2d2;
   margin-top: 30px;
+}
+.footer__input {
+  display: none;
 }
 .social {
   display: -ms-flexbox;
@@ -1845,6 +1852,7 @@ button.swiper-pagination-bullet {
     left: 0;
     background-color: #1d1d22;
     border-radius: 0 0 6px 6px;
+    z-index: 5;
   }
   .menu--opened .menu__link {
     padding-left: 20px;
@@ -2051,6 +2059,7 @@ button.swiper-pagination-bullet {
   }
   .catalog__name {
     width: 150px;
+    padding-right: 5px;
   }
   .action__img {
     width: 100%;
@@ -2110,5 +2119,31 @@ button.swiper-pagination-bullet {
   }
   .footer {
     padding-bottom: 20px;
+  }
+  .action__link:nth-of-type(3n) {
+    margin-right: 30px;
+  }
+  .footer__list {
+    display: none;
+  }
+  .footer__column .footer__h3 {
+    position: relative;
+    cursor: pointer;
+  }
+  .footer__column .footer__h3::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    right: 0;
+    width: 10px;
+    height: 5px;
+    background-image: url(../img/arrow-down.png);
+    background-repeat: no-repeat;
+  }
+  .footer__input:checked ~ .footer__list {
+    display: block;
+  }
+  .footer__input:checked + .footer__h3::after {
+    transform: rotate(180deg);
   }
 }
