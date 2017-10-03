@@ -1927,10 +1927,10 @@ button.swiper-pagination-bullet {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .subtitle,
-  .title-h2 {
-    text-align: left;
+  .title-h2,
+  .subtitle {
     padding-left: 0;
+    text-align: left;
   }
   .link--center {
     text-align: left;
@@ -2036,6 +2036,7 @@ button.swiper-pagination-bullet {
   h2 {
     font-size: 20px;
     line-height: 1.2;
+    text-align: center;
   }
   .subtitle {
     padding-right: 0;
@@ -2043,6 +2044,8 @@ button.swiper-pagination-bullet {
   .sample__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
   }
   .sample__item {
     margin-bottom: 10px;
@@ -2061,9 +2064,20 @@ button.swiper-pagination-bullet {
     width: 150px;
     padding-right: 5px;
   }
+  .catalog__list {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
   .action__img {
     width: 100%;
     height: auto;
+  }
+  .action__block {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .action__title {
+    text-align: center;
   }
   .news__item {
     width: 100%;
@@ -2080,12 +2094,23 @@ button.swiper-pagination-bullet {
   .news__block {
     width: 100%;
   }
+  .news {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .about__text {
     width: auto;
   }
   .team__item {
     margin-right: 10px;
     margin-bottom: 10px;
+  }
+  .team__item:last-child {
+    margin-right: 10px;
+  }
+  .team__list {
+    -ms-flex-pack: center;
+        justify-content: center;
   }
   .footer__place {
     -ms-flex-direction: column;
@@ -2145,5 +2170,8 @@ button.swiper-pagination-bullet {
   }
   .footer__input:checked + .footer__h3::after {
     transform: rotate(180deg);
+  }
+  .link--center {
+    text-align: center;
   }
 }
