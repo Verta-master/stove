@@ -1,5 +1,5 @@
 .article {
-  padding-bottom: 50px;
+  padding-bottom: 55px;
 }
 
 .article__img {
@@ -14,9 +14,16 @@
 .article__text {
   font-size: 14px;
   font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 20px;
+  
+  &:last-of-type {
+    margin-bottom: 10px;
+  }
 }
 
 .article__link {
+  display: block;
   font-size: 14px;
   font-weight: 500;
   color: @font-dark;
@@ -24,4 +31,5 @@
 
 .article__wrap {
   min-height: 300px;
+  padding-top: 10px;
 }

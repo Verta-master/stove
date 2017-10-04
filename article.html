@@ -233,8 +233,8 @@
           <p class="sidebar__question">Есть ли доставка за пределы города?</p>
           <p class="sidebar__info">Да, доставка осуществляется в пределах всей Иркутской области.</p>
         </div>
+        <a href="#" class="btn sidebar__btn">перейти к разделу</a>
       </div>
-      <a href="#" class="btn sidebar__btn">перейти к разделу</a>
     </section>
     
     <section class="main">
@@ -253,15 +253,15 @@
       </nav>
       
       <article class="article">
-        <h1 class="title-h1">Обучение печному делу и трудоустройство</h1>
+        <h1 class="title-h1 title-h1--internal">Обучение печному делу и трудоустройство</h1>
         <time datetime="2017-09-12T12:37:00+03:00" class="date">12 сентября 2017</time>
         <div class="article__wrap">
           <img src="img/news-page.jpg" alt="Обучение печному делу" class="article__img" width="470" height="294">
           <p class="article__text">Не определились с профессией? Тогда Вам к нам- Печной мир объявляет набор в группу "Печник".</p>
           <p class="article__text">После обучения- гарантированное трудоустройство.</p>
           <p class="article__text">Начало обучения- 7 ноября в 11.00. Ждем желающих, в группе есть места.</p>
-          <p class="article__text">Более подробно можно узнать по телефону <a href="Tel:+79641111432" class="article__link">8-964-1111-432</a>.</p>
-          <ul class="social">
+          <p class="article__text">Более подробно можно узнать по телефону <a href="Tel:+79641111432" class="article__link">8-964-1111-432.</a></p>
+          <ul class="social social--internal">
             <li class="social__item">
               <a href="#" class="social__link">
                 <img src="img/icon-vk.png" alt="Вконтакте" class="social__img" width="16" height="16">
@@ -290,11 +290,15 @@
           <div class="feedback__wrap">
             <input type="text" name="name" id="name" class="feedback__input" placeholder="Ваше имя">
             <input type="tel" name="phone" id="phone" class="feedback__input" placeholder="Ваш телефон">
-            <select name="time" id="time" class="feedback__select">
-              <option value="10">10:00</option>
-              <option value="11">11:00</option>
-              <option value="12">12:00</option>
-            </select>
+            <input type="checkbox" name="time" id="time" class="feedback__check">
+            <div class="feedback__select">
+              <label for="time" class="feedback__time">Когда позвонить</label>
+              <ul class="feedback__dropdown">
+                <li><a href="#" class="feedback__drop">10:00</a></li>
+                <li><a href="#" class="feedback__drop">11:00</a></li>
+                <li><a href="#" class="feedback__drop">12:00</a></li>
+              </ul>
+            </div>
           </div>
           <button class="btn feedback__btn">Отправить заявку</button>
         </form>
