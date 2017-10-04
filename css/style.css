@@ -1042,6 +1042,9 @@
     -ms-flex-pack: center;
         justify-content: center;
   }
+  .product__item:nth-child(2n) {
+    margin-right: 20px;
+  }
   .banner__wrap {
     width: 100%;
   }
