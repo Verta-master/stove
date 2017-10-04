@@ -1,0 +1,33 @@
+.paginator {
+  width: auto;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.paginator__link {
+  display: block;
+  padding: 0 11px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+  color: @font-dark;
+  border: 1px solid rgb(230, 230, 230);
+  
+  &:hover,
+  &:active {
+    color: #fff;
+    background-color: @bg-orange;
+    border-color: @bg-orange;
+  }
+  
+  b {
+    display: none;
+  }
+  
+  &--active {
+    color: #fff;
+    background-color: @bg-orange;
+    border-color: @bg-orange;
+  }
+}
