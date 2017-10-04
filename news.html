@@ -98,8 +98,9 @@
   
   <main class="wrapper wrapper--internal">
     <section class="sidebar">
+      <a href="#" class="sidebar__sale"><span>%</span> Распродажа</a>
       <input type="checkbox" name="sidebar" id="sidebar" class="sidebar__input">
-      <label for="sidebar" class="sidebar__label"><span>%</span> Распродажа</label>
+      <label for="sidebar" class="sidebar__label">Каталог &raquo;</label>
       
       <div class="sidebar__block">
         <div class="sidebar__part">
@@ -214,7 +215,7 @@
       
       <form action="#" method="get" class="search">
         <input type="text" name="search" id="search" class="search__input" placeholder="Поиск товаров">
-        <button type="submit" class="search__btn">Найти</button>
+        <button type="submit" name="search-btn" class="search__btn">Найти</button>
       </form>
       
       <div class="sidebar__review">
@@ -307,11 +308,11 @@
         <h2 class="feedback__h2">Вам нужны услуги печника?<br>Тогда воспользуйтесь бесплатной консультацией нашего специалиста.<br>Мы будем Вас ждать!</h2>
         <form action="#" method="post" class="feedback__form">
           <div class="feedback__wrap">
-            <input type="text" name="name" id="name" class="feedback__input" placeholder="Ваше имя">
-            <input type="tel" name="phone" id="phone" class="feedback__input" placeholder="Ваш телефон">
-            <input type="checkbox" name="time" id="time" class="feedback__check">
+            <input type="text" name="name" id="form-name" class="feedback__input" placeholder="Ваше имя">
+            <input type="tel" name="phone" id="form-phone" class="feedback__input" placeholder="Ваш телефон">
+            <input type="checkbox" name="time" id="form-time" class="feedback__check">
             <div class="feedback__select">
-              <label for="time" class="feedback__time">Когда позвонить</label>
+              <label for="form-time" class="feedback__time">Когда позвонить</label>
               <ul class="feedback__dropdown">
                 <li><a href="#" class="feedback__drop">10:00</a></li>
                 <li><a href="#" class="feedback__drop">11:00</a></li>

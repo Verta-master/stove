@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
-  <title>Печной мир: Новость</title>
+  <title>Печной мир: Каталог</title>
   <link rel="stylesheet" href="css/main.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -247,46 +247,239 @@
         </div>
       </aside>
       
+      <h1 class="title-h1 title-h1--internal">Шамотный кирпич</h1>
+      
       <nav class="breadcrumbs">
         <a href="#" class="breadcrumbs__link">Главная</a>
-        <a href="#" class="breadcrumbs__link">Новости</a>
-        <span class="breadcrumbs__link breadcrumbs__link--active">Обучение печному...</span>
+        <a href="#" class="breadcrumbs__link">Каталог</a>
+        <a href="#" class="breadcrumbs__link">Кирпич</a>
+        <span class="breadcrumbs__link breadcrumbs__link--active">Шамотный кирпич</span>
       </nav>
       
-      <article class="article">
-        <h1 class="title-h1 title-h1--internal">Обучение печному делу и трудоустройство</h1>
-        <time datetime="2017-09-12T12:37:00+03:00" class="date">12 сентября 2017</time>
-        <div class="article__wrap">
-          <img src="img/news-page.jpg" alt="Обучение печному делу" class="article__img" width="470" height="294">
-          <p class="article__text">Не определились с профессией? Тогда Вам к нам- Печной мир объявляет набор в группу "Печник".</p>
-          <p class="article__text">После обучения- гарантированное трудоустройство.</p>
-          <p class="article__text">Начало обучения- 7 ноября в 11.00. Ждем желающих, в группе есть места.</p>
-          <p class="article__text">Более подробно можно узнать по телефону <a href="Tel:+79641111432" class="article__link">8-964-1111-432.</a></p>
-          <ul class="social social--internal">
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <img src="img/icon-vk.png" alt="Вконтакте" class="social__img" width="16" height="16">
-                <span>Поделиться</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <img src="img/icon-tw.png" alt="Вконтакте" class="social__img" width="16" height="14">
-                <span>Твитнуть</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <img src="img/icon-fb.png" alt="Вконтакте" class="social__img" width="16" height="16">
-                <span>Поделиться</span>
-              </a>
-            </li>
+      <div class="banner">
+        <div class="banner__wrap">
+          <h2 class="banner__h2">1. Заказываете</h2>
+          <ul class="banner__list">
+            <li class="banner__item">По телефону</li>
+            <li class="banner__item">На нашем сайте</li>
+            <li class="banner__item">В магазине <a href="#">(см.адреса)</a></li>
           </ul>
         </div>
-      </article>
+        <div class="banner__wrap">
+          <h2 class="banner__h2">2. Получаете</h2>
+          <ul class="banner__list">
+            <li class="banner__item">Доставка по Иркутску и области</li>
+            <li class="banner__item">Самовывоз <a href="#">(см. адреса)</a></li>
+          </ul>
+        </div>
+        <div class="banner__wrap">
+          <h2 class="banner__h2">3. Оплачиваете</h2>
+          <ul class="banner__list">
+            <li class="banner__item">Банковской картой</li>
+            <li class="banner__item">Наличными</li>
+            <li class="banner__item">Оплата по счету</li>
+          </ul>
+        </div>
+      </div>
       
-      <div class="feedback">
-        <h2 class="feedback__h2">Вам нужны услуги печника?<br>Тогда воспользуйтесь бесплатной консультацией нашего специалиста.<br>Мы будем Вас ждать!</h2>
+      <div class="sort">
+        <span class="sort__title">Сортировать по</span>
+        <input type="checkbox" name="sort" id="sort" class="sort__btn">
+        <div class="sort__wrap">
+          <label for="sort" class="sort__label">возрастанию цены</label>
+          <ul class="sort__list">
+            <li><a href="#" class="sort__link">возрастанию цены</a></li>
+            <li><a href="#" class="sort__link">убыванию цены</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <ul class="product">
+        <li class="product__item">
+          <p class="product__label product__label--new">новинка</p>
+          <p class="product__label product__label--hit">Хит продаж</p>
+          <a href="#" class="product__link">
+            <img src="img/brick.jpg" class="product__img" alt="Шаботный кирпич" width="210" height="156">
+            <h3 class="product__title">Шаботный кирпич ШБ-96 (плита)</h3>
+          </a>
+          <p class="product__text">Размер: 600х230х90 мм<br>Количество в поддоне: 40 шт</p>
+          <div class="product__price">
+            <p class="product__old-price">2 640 &#8381;</p>
+            <p class="product__sale-price">1 640 &#8381;</p>
+          </div>
+          <form action="#" method="post" class="product__form">
+            <button type="button" class="product__minus">-</button>
+            <input type="text" name="number" class="product__number" value="2">
+            <button type="button" class="product__plus">+</button>
+            <button type="submit" name="buy" class="product__buy">Купить</button>
+          </form>
+        </li>
+        <li class="product__item">
+          <p class="product__label product__label--new">новинка</p>
+          <p class="product__label product__label--hit">Хит продаж</p>
+          <a href="#" class="product__link">
+            <img src="img/brick.jpg" class="product__img" alt="Шаботный кирпич" width="210" height="156">
+            <h3 class="product__title">Шаботный кирпич ШБ-96 (плита)</h3>
+          </a>
+          <p class="product__text">Размер: 600х230х90 мм<br>Количество в поддоне: 40 шт</p>
+          <div class="product__price">
+            <p class="product__old-price">2 640 &#8381;</p>
+            <p class="product__sale-price">1 640 &#8381;</p>
+          </div>
+          <form action="#" method="post" class="product__form">
+            <button type="button" class="product__minus">-</button>
+            <input type="text" name="number" class="product__number" value="2">
+            <button type="button" class="product__plus">+</button>
+            <button type="submit" name="buy" class="product__buy">Купить</button>
+          </form>
+        </li>
+        <li class="product__item">
+          <p class="product__label product__label--new">новинка</p>
+          <p class="product__label product__label--hit">Хит продаж</p>
+          <a href="#" class="product__link">
+            <img src="img/brick.jpg" class="product__img" alt="Шаботный кирпич" width="210" height="156">
+            <h3 class="product__title">Шаботный кирпич ШБ-96 (плита)</h3>
+          </a>
+          <p class="product__text">Размер: 600х230х90 мм<br>Количество в поддоне: 40 шт</p>
+          <div class="product__price">
+            <p class="product__old-price">2 640 &#8381;</p>
+            <p class="product__sale-price">1 640 &#8381;</p>
+          </div>
+          <form action="#" method="post" class="product__form">
+            <button type="button" class="product__minus">-</button>
+            <input type="text" name="number" class="product__number" value="2">
+            <button type="button" class="product__plus">+</button>
+            <button type="submit" name="buy" class="product__buy">Купить</button>
+          </form>
+        </li>
+        <li class="product__item">
+          <p class="product__label product__label--new">новинка</p>
+          <p class="product__label product__label--hit">Хит продаж</p>
+          <a href="#" class="product__link">
+            <img src="img/brick.jpg" class="product__img" alt="Шаботный кирпич" width="210" height="156">
+            <h3 class="product__title">Шаботный кирпич ШБ-96 (плита)</h3>
+          </a>
+          <p class="product__text">Размер: 600х230х90 мм<br>Количество в поддоне: 40 шт</p>
+          <div class="product__price">
+            <p class="product__old-price">2 640 &#8381;</p>
+            <p class="product__sale-price">1 640 &#8381;</p>
+          </div>
+          <form action="#" method="post" class="product__form">
+            <button type="button" class="product__minus">-</button>
+            <input type="text" name="number" class="product__number" value="2">
+            <button type="button" class="product__plus">+</button>
+            <button type="submit" name="buy" class="product__buy">Купить</button>
+          </form>
+        </li>
+        <li class="product__item">
+          <p class="product__label product__label--new">новинка</p>
+          <p class="product__label product__label--hit">Хит продаж</p>
+          <a href="#" class="product__link">
+            <img src="img/brick.jpg" class="product__img" alt="Шаботный кирпич" width="210" height="156">
+            <h3 class="product__title">Шаботный кирпич ШБ-96 (плита)</h3>
+          </a>
+          <p class="product__text">Размер: 600х230х90 мм<br>Количество в поддоне: 40 шт</p>
+          <div class="product__price">
+            <p class="product__old-price">2 640 &#8381;</p>
+            <p class="product__sale-price">1 640 &#8381;</p>
+          </div>
+          <form action="#" method="post" class="product__form">
+            <button type="button" class="product__minus">-</button>
+            <input type="text" name="number" class="product__number" value="2">
+            <button type="button" class="product__plus">+</button>
+            <button type="submit" name="buy" class="product__buy">Купить</button>
+          </form>
+        </li>
+        <li class="product__item">
+          <p class="product__label product__label--new">новинка</p>
+          <p class="product__label product__label--hit">Хит продаж</p>
+          <a href="#" class="product__link">
+            <img src="img/brick.jpg" class="product__img" alt="Шаботный кирпич" width="210" height="156">
+            <h3 class="product__title">Шаботный кирпич ШБ-96 (плита)</h3>
+          </a>
+          <p class="product__text">Размер: 600х230х90 мм<br>Количество в поддоне: 40 шт</p>
+          <div class="product__price">
+            <p class="product__old-price">2 640 &#8381;</p>
+            <p class="product__sale-price">1 640 &#8381;</p>
+          </div>
+          <form action="#" method="post" class="product__form">
+            <button type="button" class="product__minus">-</button>
+            <input type="text" name="number" class="product__number" value="2">
+            <button type="button" class="product__plus">+</button>
+            <button type="submit" name="buy" class="product__buy">Купить</button>
+          </form>
+        </li>
+        <li class="product__item">
+          <p class="product__label product__label--new">новинка</p>
+          <p class="product__label product__label--hit">Хит продаж</p>
+          <a href="#" class="product__link">
+            <img src="img/brick.jpg" class="product__img" alt="Шаботный кирпич" width="210" height="156">
+            <h3 class="product__title">Шаботный кирпич ШБ-96 (плита)</h3>
+          </a>
+          <p class="product__text">Размер: 600х230х90 мм<br>Количество в поддоне: 40 шт</p>
+          <div class="product__price">
+            <p class="product__old-price">2 640 &#8381;</p>
+            <p class="product__sale-price">1 640 &#8381;</p>
+          </div>
+          <form action="#" method="post" class="product__form">
+            <button type="button" class="product__minus">-</button>
+            <input type="text" name="number" class="product__number" value="2">
+            <button type="button" class="product__plus">+</button>
+            <button type="submit" name="buy" class="product__buy">Купить</button>
+          </form>
+        </li>
+        <li class="product__item">
+          <p class="product__label product__label--new">новинка</p>
+          <p class="product__label product__label--hit">Хит продаж</p>
+          <a href="#" class="product__link">
+            <img src="img/brick.jpg" class="product__img" alt="Шаботный кирпич" width="210" height="156">
+            <h3 class="product__title">Шаботный кирпич ШБ-96 (плита)</h3>
+          </a>
+          <p class="product__text">Размер: 600х230х90 мм<br>Количество в поддоне: 40 шт</p>
+          <div class="product__price">
+            <p class="product__old-price">2 640 &#8381;</p>
+            <p class="product__sale-price">1 640 &#8381;</p>
+          </div>
+          <form action="#" method="post" class="product__form">
+            <button type="button" class="product__minus">-</button>
+            <input type="text" name="number" class="product__number" value="2">
+            <button type="button" class="product__plus">+</button>
+            <button type="submit" name="buy" class="product__buy">Купить</button>
+          </form>
+        </li>
+        <li class="product__item">
+          <p class="product__label product__label--new">новинка</p>
+          <p class="product__label product__label--hit">Хит продаж</p>
+          <a href="#" class="product__link">
+            <img src="img/brick.jpg" class="product__img" alt="Шаботный кирпич" width="210" height="156">
+            <h3 class="product__title">Шаботный кирпич ШБ-96 (плита)</h3>
+          </a>
+          <p class="product__text">Размер: 600х230х90 мм<br>Количество в поддоне: 40 шт</p>
+          <div class="product__price">
+            <p class="product__old-price">2 640 &#8381;</p>
+            <p class="product__sale-price">1 640 &#8381;</p>
+          </div>
+          <form action="#" method="post" class="product__form">
+            <button type="button" class="product__minus">-</button>
+            <input type="text" name="number" class="product__number" value="2">
+            <button type="button" class="product__plus">+</button>
+            <button type="submit" name="buy" class="product__buy">Купить</button>
+          </form>
+        </li>
+      </ul>
+      
+      <nav class="paginator paginator--catalog">
+        <a href="#" class="paginator__link"><b>&laquo; </b><span>предыдущая стр.</span></a>
+        <a href="#" class="paginator__link">1</a>
+        <a href="#" class="paginator__link">2</a>
+        <a href="#" class="paginator__link">3</a>
+        <a class="paginator__link paginator__link--active">4</a>
+        <a href="#" class="paginator__link">5</a>
+        <a href="#" class="paginator__link"><span>следущая стр.</span><b> &raquo;</b></a>
+      </nav>
+      
+      <div class="feedback feedback--catalog">
+        <h2 class="feedback__h2">Не нашли, что искали? Позвоните по номеру 90-80-51<br>или оставьте заявку на обратный звонок</h2>
         <form action="#" method="post" class="feedback__form">
           <div class="feedback__wrap">
             <input type="text" name="name" id="form-name" class="feedback__input" placeholder="Ваше имя">
@@ -304,6 +497,30 @@
           <button class="btn feedback__btn">Отправить заявку</button>
         </form>
       </div>
+      
+      <div class="catalog catalog--page">
+        <h2 class="catalog__h2">Возможно Вас также заинтересует</h2>
+        <ul class="catalog__list catalog__list--page">
+          <li class="catalog__item">
+            <a href="#" class="catalog__link">
+              <img src="img/catalog-2.jpg" alt="Строительный кирпич" class="catalog__img" width="150" height="120">
+              <p class="catalog__name">Строительный кирпич, облицовочный</p>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link">
+              <img src="img/catalog-3.jpg" alt="Дверцы топочные для печей и каминов" class="catalog__img" width="150" height="120">
+              <p class="catalog__name">Дверцы топочные для печей и каминов</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+      <article class="main__article">
+        <h3 class="main__h3">Заголовок статьи</h3>
+        <p class="main__text">Идейные соображения высшего порядка, а также новая модель организационной деятельности играет важную роль в формировании новых предложений. Не следует, однако забывать, что сложившаяся структура организации представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям.<br>Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности позволяет оценить значение направлений прогрессивного развития. Разнообразный и богатый опыт сложившаяся структура организации влечет за собой процесс внедрения и модернизации форм развития. Таким образом сложившаяся структура организации в значительной степени обуславливает создание дальнейших направлений развития.</p>
+        <a href="#" class="link"><span>Читать полностью</span></a>
+      </article>
     </section>
   </main>
   
