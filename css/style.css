@@ -1164,6 +1164,158 @@
   color: #de7627;
   background-image: linear-gradient(to right, #de7627 7px, transparent 7px, transparent);
 }
+.portfolio__banner {
+  width: 100%;
+  min-height: 140px;
+  padding: 15px 50px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-image: url(../../img/banner-wall.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.portfolio__banner-text {
+  font-size: 19px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 27px;
+  text-align: center;
+  margin: 0;
+}
+.portfolio__h2 {
+  font-size: 21px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.portfolio__h3 {
+  font-size: 19px;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.portfolio__text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.portfolio__text b {
+  font-weight: 500;
+  color: #333333;
+}
+.slider {
+  padding-top: 20px;
+  margin-bottom: 60px;
+}
+.slider__title {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.2;
+  text-transform: none;
+  letter-spacing: normal;
+  margin-bottom: 25px;
+}
+.slider__text {
+  border-radius: 0 0 4px 4px;
+  background-color: #1d1d22;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 0;
+  padding: 15px;
+  max-width: 670px;
+}
+.slider__comment {
+  font-size: 15px;
+  margin-top: 10px;
+}
+.slider__comment span {
+  margin-right: 40px;
+}
+.slider__img {
+  display: block;
+  border-radius: 4px 4px 0 0;
+}
+.swiper-container--portfolio {
+  margin: 0;
+  padding: 0;
+}
+.slider__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  position: relative;
+}
+.slider__figure {
+  margin: 0;
+  padding: 0;
+}
+.gallery-top {
+  height: 100%;
+  width: 78%;
+}
+.gallery-thumbs {
+  width: 20%;
+  position: relative;
+}
+.gallery-thumbs .slider__img {
+  border-radius: 4px;
+}
+.gallery-thumbs .swiper-slide {
+  width: 170px;
+  height: 95px !important;
+  cursor: pointer;
+}
+.gallery-thumbs .swiper-slide-active .slider__img {
+  border: 2px solid #de7627;
+  border-radius: 4px;
+}
+.gallery-thumbs .swiper-wrapper {
+  margin-top: -158px;
+}
+.slider__nav-up,
+.slider__nav-down {
+  width: 170px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  border: none;
+  outline: none;
+  z-index: 10;
+  cursor: pointer;
+  background-image: url(../img/arrow-up.png);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 31px 18px;
+  background-position: center;
+}
+.slider__nav-up {
+  top: 0;
+}
+.slider__nav-down {
+  bottom: 0;
+  transform: rotate(180deg);
+}
+.slider__next,
+.slider__prev {
+  display: none;
+  position: absolute;
+  top: 45%;
+  width: 18px;
+  height: 31px;
+  cursor: pointer;
+  background-image: url(../img/arrow-up.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  transform: rotate(90deg);
+}
 @media (max-width: 1229px) {
   .wrapper--internal {
     display: block;
@@ -1224,6 +1376,14 @@
   }
   .product__item:nth-child(2n) {
     margin-right: 0;
+  }
+  .gallery-thumbs .swiper-slide,
+  .gallery-thumbs .swiper-slide img {
+    width: 145px;
+    height: 70px !important;
+  }
+  .gallery-thumbs .swiper-wrapper {
+    margin-top: -105px;
   }
 }
 @media (max-width: 767px) {
@@ -1288,6 +1448,25 @@
     top: 10px;
     right: 10px;
     background-image: url(../img/icon-cross.svg);
+  }
+  .slider__wrap {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .gallery-top {
+    margin-right: 20px;
+  }
+  .gallery-thumbs .swiper-slide,
+  .gallery-thumbs .swiper-slide img {
+    width: 100px;
+    height: 50px !important;
+  }
+  .slider__nav-down,
+  .slider__nav-up {
+    width: 100px;
+  }
+  .gallery-thumbs .swiper-wrapper {
+    margin-top: -70px;
   }
 }
 @media (max-width: 599px) {
@@ -1359,5 +1538,37 @@
   }
   .comment__code {
     margin-top: 10px;
+  }
+  .gallery-thumbs {
+    display: none;
+  }
+  .slider__comment {
+    font-size: 12px;
+    margin-top: 0;
+  }
+  .slider__comment span {
+    margin-right: 10px;
+  }
+  .slider__text {
+    padding: 5px;
+    font-size: 13px;
+  }
+  .gallery-top {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .slider__next {
+    display: block;
+  }
+  .slider__prev {
+    display: block;
+    transform: scale(-1) rotate(90deg);
+  }
+  .portfolio__banner-text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .slider__title {
+    font-size: 18px;
   }
 }
