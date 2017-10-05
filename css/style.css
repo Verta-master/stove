@@ -756,15 +756,6 @@
 .product__item:hover {
   box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.25);
 }
-.product__item::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 37px;
-  width: 268px;
-  height: 1px;
-  background-color: #ededed;
-}
 .product__item:nth-child(3n) {
   margin-right: 0;
 }
@@ -841,6 +832,7 @@
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
+  border-top: 1px solid #ededed;
 }
 .product__minus,
 .product__plus {
@@ -886,6 +878,157 @@
   background-color: #ff6600;
   background-image: url(../img/icon-cart.png);
   color: #fff;
+}
+.stars {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+  margin-left: 10px;
+}
+.stars__radio {
+  display: none;
+}
+.stars__label {
+  background: url(../img/stars.png) no-repeat;
+  background-position: -30px -5px;
+  height: 14px;
+  width: 15px;
+  cursor: pointer;
+  margin-right: 2px;
+  position: relative;
+}
+.stars__radio:checked ~ .stars__label {
+  background-position: -5px -5px;
+}
+.stars__label:hover,
+.stars__label:hover ~ .stars__label {
+  background-position: -5px -5px;
+}
+.comment__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 15px;
+}
+.comment__name {
+  margin: 0;
+  margin-right: 17px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.comment__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.comment__video {
+  width: 370px;
+  height: 222px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  background-image: url(../img/video.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.comment__video iframe {
+  border: none;
+  max-width: 100%;
+}
+.comment__response {
+  padding-top: 25px;
+  border-top: 1px solid rgba(29, 29, 34, 0.2);
+}
+.comment__response .comment__wrap {
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+.comment__title {
+  font-size: 21px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  text-align: left;
+}
+.comment__shape {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 15px;
+  padding-top: 20px;
+  margin-top: 5px;
+  margin-bottom: 45px;
+  background-image: url(../img/bg-text.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.comment__add {
+  max-width: 540px;
+  margin-bottom: 60px;
+}
+.comment__add .comment__wrap {
+  margin-top: 25px;
+}
+.comment__area,
+.comment__input {
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+}
+.comment__area:-ms-input-placeholder,
+.comment__input:-ms-input-placeholder {
+  opacity: 1;
+}
+.comment__area::placeholder,
+.comment__input::placeholder {
+  opacity: 1;
+}
+.comment__input {
+  width: 256px;
+  height: 34px;
+}
+.comment__input:first-child {
+  margin-right: 25px;
+}
+.comment__area {
+  width: 100%;
+  min-height: 120px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.comment__captcha {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 360px;
+  margin-bottom: 30px;
+}
+.comment__code {
+  max-width: 180px;
+  margin: 0;
+}
+.comment__code input {
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+  width: 178px;
+  height: 33px;
+  margin-top: 15px;
+  padding: 0 10px;
+}
+.comment__code label {
+  font-size: 14px;
+  font-weight: 500;
+}
+.comment__btn {
+  width: 186px;
 }
 @media (max-width: 1229px) {
   .wrapper--internal {
@@ -1047,5 +1190,29 @@
   }
   .banner__wrap {
     width: 100%;
+  }
+  .comment__wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .comment__video {
+    width: 300px;
+    height: auto;
+  }
+  .comment__shape {
+    background-image: none;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    padding-top: 15px;
+  }
+  .comment__input:first-child {
+    margin-bottom: 15px;
+  }
+  .comment__captcha {
+    width: 100%;
+    max-width: 360px;
+  }
+  .comment__code {
+    margin-top: 10px;
   }
 }
