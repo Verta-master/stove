@@ -1,0 +1,134 @@
+.comment__wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.comment__name {
+  margin: 0;
+  margin-right: 17px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.comment__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.comment__video {
+  width: 370px;
+  height: 222px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  background-image: url(../img/video.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  iframe {
+    border: none;
+    max-width: 100%;
+  }
+}
+
+.comment__response {
+  padding-top: 25px;
+  border-top: 1px solid rgba(29, 29, 34, 0.2);
+  
+  .comment__wrap {
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+}
+
+.comment__title {
+  font-size: 21px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.comment__shape {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 15px;
+  padding-top: 20px;
+  margin-top: 5px;
+  margin-bottom: 45px;
+  background-image: url(../img/bg-text.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.comment__add {
+  max-width: 540px;
+  margin-bottom: 60px;
+  
+  .comment__wrap {
+    margin-top: 25px;
+  }
+}
+
+.comment__area,
+.comment__input {
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 3px;
+  
+  &::placeholder {
+    opacity: 1;
+  }
+}
+
+.comment__input {
+  width: 256px;
+  height: 34px;
+  
+  &:first-child {
+    margin-right: 25px;
+  }
+}
+
+.comment__area {
+  width: 100%;
+  min-height: 120px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.comment__captcha {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 360px;
+  margin-bottom: 30px;
+}
+
+.comment__code {
+  max-width: 180px;
+  margin: 0;
+  
+  input {
+    border-radius: 3px;
+    border: 1px solid rgb(221, 221, 221);
+    width: 178px;
+    height: 33px;
+    margin-top: 15px;
+    padding: 0 10px;
+  }
+  
+  label {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.comment__btn {
+  width: 186px;
+}

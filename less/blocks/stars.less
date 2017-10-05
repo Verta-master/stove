@@ -1,0 +1,29 @@
+.stars {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: 10px;
+}
+
+.stars__radio {
+  display: none;
+}
+
+.stars__label {
+  background: url(../img/stars.png) no-repeat;
+  background-position: -30px -5px;
+  height: 14px;
+  width: 15px;
+  cursor: pointer;
+  margin-right: 2px;
+  position: relative;
+}
+
+.stars__radio:checked ~ .stars__label {
+  background-position: -5px -5px;
+}
+
+.stars__label:hover,
+.stars__label:hover ~ .stars__label {
+  background-position: -5px -5px;
+}
