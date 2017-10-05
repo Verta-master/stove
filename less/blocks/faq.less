@@ -1,0 +1,67 @@
+.faq__modal {
+  width: 185px;
+}
+
+.faq__h1 {
+  margin-bottom: 10px;
+}
+
+.faq__list {
+  margin-bottom: 60px;
+}
+
+.faq__item {
+  margin-bottom: 22px;
+}
+
+.faq__check {
+  display: none;
+}
+
+.faq__label {
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  
+  span {
+    background-image: linear-gradient(to right, @font-dark 7px, transparent 7px, transparent);
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    background-size: 11px 1px;
+  }
+  
+  &:hover span,
+  &:active span {
+    color: @font-orange;
+    background-image: linear-gradient(to right, @font-orange 7px, transparent 7px, transparent);
+  }
+}
+
+.faq__answer {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.faq__comment {
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 0;
+  
+  span {
+    color: @font-orange;
+    cursor: pointer;
+  }
+}
+
+.faq__field {
+  display: none;
+}
+
+.faq__check:checked ~ .faq__field {
+  display: block;
+}
+
+.faq__check:checked + .faq__label span {
+  color: @font-orange;
+  background-image: linear-gradient(to right, @font-orange 7px, transparent 7px, transparent);
+}
