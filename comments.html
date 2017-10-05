@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
-  <title>Печной мир: Новости</title>
+  <title>Печной мир: Отзывы</title>
   <link rel="stylesheet" href="css/main.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -249,46 +249,105 @@
       
       <nav class="breadcrumbs">
         <a href="#" class="breadcrumbs__link">Главная</a>
-        <span class="breadcrumbs__link breadcrumbs__link--active">Новости</span>
+        <span class="breadcrumbs__link breadcrumbs__link--active">Отзывы</span>
       </nav>
       
-      <article class="news-page">
-        <h1 class="title-h1 title-h1--internal">Новости</h1>
-        <ul class="news-page__list">
-          <li class="news-page__wrap">
-            <img src="img/news-page.jpg" alt="Обучение печному делу" class="news-page__img" width="270" height="169">
-            <div class="news-page__block">
+      <article class="comment">
+        <div class="comment__h1">
+          <h1 class="title-h1 title-h1--internal">Отзывы</h1>
+          <button type="button" class="btn comment__modal">Оставить отзыв</button>
+        </div>
+        
+        <ul class="comment__list">
+          <li class="comment__item">
+            <div class="comment__wrap">
+              <p class="comment__name">Николай Иванов</p>
               <time datetime="2017-09-12T12:37:00+03:00" class="date">12 сентября 2017</time>
-              <h2 class="news-page__title">Бой кирпича за 5 рублей!</h2>
-              <p class="news-page__text">Бой полнотелого кирпича стоит - 5 руб за кирпич, а пустотелый - 10 руб за кирпич.</p>
-              <a href="#" class="link news-page__link"><span>Подробнее</span></a>
+              <div class="stars">
+                <input id="star-5" type="radio" name="stars1" class="stars__radio">
+                <label title="gorgeous" for="star-5" class="stars__label"></label>
+                <input id="star-4" type="radio" name="stars1" class="stars__radio">
+                <label title="good" for="star-4" class="stars__label"></label>
+                <input id="star-3" type="radio" name="stars1" class="stars__radio">
+                <label title="regular" for="star-3" class="stars__label"></label>
+                <input id="star-2" type="radio" name="stars1" class="stars__radio">
+                <label title="poor" for="star-2" class="stars__label"></label>
+                <input id="star-1" type="radio" name="stars1" class="stars__radio">
+                <label title="bad" for="star-1" class="stars__label"></label>
+              </div>
+            </div>
+            <div class="comment-border comment__block">
+              <p class="comment__text">Давно мечтал о камине в своем доме, но считал, что это дорого и стоит ли .После длительных обсуждений с супругой я решился. Познакомился с ребятами, предложили варианты за вполне приемлемые деньги и подсказали что материал также смогу приобрести в магазине, менеджер Александр проявил себя с положительной стороны. После чего договорились по материалам и дверце, оплатил счет и в течении 30 дней я наблюдал как тщательно мастер с помощником делают мой камин! Благодарен Ш.Александру. Теперь я счастливый обладатель прекрасного камина, спасибо. Камин в с. Смоленщина</p>
+              <a href="#" class="link comment__link"><span>Смотреть комментарии</span></a>
             </div>
           </li>
-          <li class="news-page__wrap">
-            <img src="img/news-page.jpg" alt="Обучение печному делу" class="news-page__img" width="270" height="169">
-            <div class="news-page__block">
+          <li class="comment__item">
+            <div class="comment__wrap">
+              <p class="comment__name">Николай Иванов</p>
               <time datetime="2017-09-12T12:37:00+03:00" class="date">12 сентября 2017</time>
-              <h2 class="news-page__title">Бой кирпича за 5 рублей!</h2>
-              <p class="news-page__text">Бой полнотелого кирпича стоит - 5 руб за кирпич, а пустотелый - 10 руб за кирпич.</p>
-              <a href="#" class="link news-page__link"><span>Подробнее</span></a>
+              <div class="stars">
+                <input id="star5" type="radio" name="stars2" class="stars__radio">
+                <label title="gorgeous" for="star5" class="stars__label"></label>
+                <input id="star4" type="radio" name="stars2" class="stars__radio">
+                <label title="good" for="star4" class="stars__label"></label>
+                <input id="star3" type="radio" name="stars2" class="stars__radio">
+                <label title="regular" for="star3" class="stars__label"></label>
+                <input id="star2" type="radio" name="stars2" class="stars__radio">
+                <label title="poor" for="star2" class="stars__label"></label>
+                <input id="star1" type="radio" name="stars2" class="stars__radio">
+                <label title="bad" for="star1" class="stars__label"></label>
+              </div>
+            </div>
+            <div class="comment-border">
+              <p class="comment__text">Давно мечтал о камине в своем доме, но считал, что это дорого и стоит ли .После длительных обсуждений с супругой я решился.</p>
+              <div class="comment__video comment__video--small">
+                <iframe width="219" height="131" src="https://www.youtube.com/embed/Kr2D1VnZJqg" allowfullscreen></iframe>
+              </div>
+              <a href="#" class="link comment__link"><span>Смотреть комментарии</span></a>
             </div>
           </li>
-          <li class="news-page__wrap">
-            <img src="img/news-page.jpg" alt="Обучение печному делу" class="news-page__img" width="270" height="169">
-            <div class="news-page__block">
+          <li class="comment__item">
+            <div class="comment__wrap">
+              <p class="comment__name">Николай Иванов</p>
               <time datetime="2017-09-12T12:37:00+03:00" class="date">12 сентября 2017</time>
-              <h2 class="news-page__title">Бой кирпича за 5 рублей!</h2>
-              <p class="news-page__text">Бой полнотелого кирпича стоит - 5 руб за кирпич, а пустотелый - 10 руб за кирпич.</p>
-              <a href="#" class="link news-page__link"><span>Подробнее</span></a>
+              <div class="stars">
+                <input id="star05" type="radio" name="stars3" class="stars__radio">
+                <label title="gorgeous" for="star05" class="stars__label"></label>
+                <input id="star04" type="radio" name="stars3" class="stars__radio">
+                <label title="good" for="star04" class="stars__label"></label>
+                <input id="star03" type="radio" name="stars3" class="stars__radio">
+                <label title="regular" for="star03" class="stars__label"></label>
+                <input id="star02" type="radio" name="stars3" class="stars__radio">
+                <label title="poor" for="star02" class="stars__label"></label>
+                <input id="star01" type="radio" name="stars3" class="stars__radio">
+                <label title="bad" for="star01" class="stars__label"></label>
+              </div>
+            </div>
+            <div class="comment-border">
+              <p class="comment__text">Давно мечтал о камине в своем доме, но считал, что это дорого и стоит ли .После длительных обсуждений с супругой я решился. Познакомился с ребятами, предложили варианты за вполне приемлемые деньги и подсказали что материал также смогу приобрести в магазине, менеджер Александр проявил себя с положительной стороны. После чего договорились по материалам и дверце, оплатил счет и в течении 30 дней я наблюдал как тщательно мастер с помощником делают мой камин! Благодарен Ш.Александру. Теперь я счастливый обладатель прекрасного камина, спасибо. Камин в с. Смоленщина</p>
+              <a href="#" class="link comment__link"><span>Смотреть комментарии</span></a>
             </div>
           </li>
-          <li class="news-page__wrap">
-            <img src="img/news-page.jpg" alt="Обучение печному делу" class="news-page__img" width="270" height="169">
-            <div class="news-page__block">
+          <li class="comment__item">
+            <div class="comment__wrap">
+              <p class="comment__name">Николай Иванов</p>
               <time datetime="2017-09-12T12:37:00+03:00" class="date">12 сентября 2017</time>
-              <h2 class="news-page__title">Бой кирпича за 5 рублей!</h2>
-              <p class="news-page__text">Бой полнотелого кирпича стоит - 5 руб за кирпич, а пустотелый - 10 руб за кирпич.</p>
-              <a href="#" class="link news-page__link"><span>Подробнее</span></a>
+              <div class="stars">
+                <input id="star_5" type="radio" name="stars4" class="stars__radio">
+                <label title="gorgeous" for="star_5" class="stars__label"></label>
+                <input id="star_4" type="radio" name="stars4" class="stars__radio">
+                <label title="good" for="star_4" class="stars__label"></label>
+                <input id="star_3" type="radio" name="stars4" class="stars__radio">
+                <label title="regular" for="star_3" class="stars__label"></label>
+                <input id="star_2" type="radio" name="stars4" class="stars__radio">
+                <label title="poor" for="star_2" class="stars__label"></label>
+                <input id="star_1" type="radio" name="stars4" class="stars__radio">
+                <label title="bad" for="star_1" class="stars__label"></label>
+              </div>
+            </div>
+            <div class="comment-border">
+              <p class="comment__text">Давно мечтал о камине в своем доме, но считал, что это дорого и стоит ли .После длительных обсуждений с супругой я решился. Познакомился с ребятами, предложили варианты за вполне приемлемые деньги и подсказали что материал также смогу приобрести в магазине, менеджер Александр проявил себя с положительной стороны. После чего договорились по материалам и дверце, оплатил счет и в течении 30 дней я наблюдал как тщательно мастер с помощником делают мой камин! Благодарен Ш.Александру. Теперь я счастливый обладатель прекрасного камина, спасибо. Камин в с. Смоленщина</p>
+              <a href="#" class="link comment__link"><span>Смотреть комментарии</span></a>
             </div>
           </li>
         </ul>
@@ -429,7 +488,8 @@
       </section>
     </div>
   </footer>
-  
+
+<!-- Modal window -->
   <div style="display: none;">
     <div class="modal" id="modal">
       <button type="button" class="modal__close arcticmodal-close"><span class="visually-hidden">Закрыть</span></button>
@@ -452,9 +512,50 @@
     </div>
   </div>
   
+<!-- Add review -->
+  <div style="display: none;">
+    <div class="comment__add-modal" id="review">
+      <button type="button" class="comment__close arcticmodal-close"><span class="visually-hidden">Закрыть</span></button>
+      <h2 class="comment__title">Добавить отзыв</h2>
+      <p class="comment__text">Здесь Вы можете описать свои впечатления о приобретенных товарах, а также о самом процессе покупки, доставки или работы пункта выдачи.</p>
+      <div class="comment__wrap">
+        <p class="comment__text">Оценка товара</p>
+        <div class="stars">
+          <input id="star-m5" type="radio" name="review" class="stars__radio">
+          <label title="gorgeous" for="star-m5" class="stars__label"></label>
+          <input id="star-m4" type="radio" name="review" class="stars__radio">
+          <label title="good" for="star-m4" class="stars__label"></label>
+          <input id="star-m3" type="radio" name="review" class="stars__radio">
+          <label title="regular" for="star-m3" class="stars__label"></label>
+          <input id="star-m2" type="radio" name="review" class="stars__radio">
+          <label title="poor" for="star-m2" class="stars__label"></label>
+          <input id="star-m1" type="radio" name="review" class="stars__radio">
+          <label title="bad" for="star-m1" class="stars__label"></label>
+        </div>
+      </div>
+      <form action="#" method="post" class="comment__form">
+        <div class="comment__wrap">
+          <input type="text" name="add" class="comment__input" placeholder="Ваше имя">
+          <input type="tel" name="tel" class="comment__input" placeholder="Ваш телефон">
+        </div>
+        <textarea name="text" class="comment__area" placeholder="Текст сообщения"></textarea>
+        <div class="comment__captcha">
+          <img src="img/captcha.jpg" alt="" width="156" height="62">
+          <p class="comment__code">
+            <label for="captcha">Код с картинки</label>
+            <input type="text" name="captcha" id="captcha">
+          </p>
+        </div>
+        <button type="submit" name="review" class="btn comment__btn">Добавить отзыв</button>
+      </form>
+    </div>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/jquery.arcticmodal-0.3.min.js"></script>
   <script src="js/script.js"></script>
+  
+<!-- Modal window call -->
   <script>
     $(".header__call").click(function(){
       $(function(){
@@ -463,6 +564,22 @@
           css: {
             backgroundColor: "#000",
             opacity: .8,
+            }
+          }
+        });
+      });
+    });
+  </script>
+  
+<!-- Comment add window call -->
+  <script>
+    $(".comment__modal").click(function(){
+      $(function(){
+        $("#review").arcticmodal({
+          overlay: {
+          css: {
+            backgroundColor: "#000",
+            opacity: .3,
             }
           }
         });
