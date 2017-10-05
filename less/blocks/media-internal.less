@@ -136,6 +136,20 @@
   .banner__wrap:nth-child(2) .banner__item:first-child::before {
     top: 5px;
   }
+  
+  .comment__add-modal {
+    position: absolute;
+    max-width: 100%;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+  
+  .comment__close {
+    top: 10px;
+    right: 10px;
+    background-image: url(../img/icon-cross.svg);
+  }
 }
 //--------------------------------
 @media @mobile-600 {
@@ -204,13 +218,11 @@
   .comment__video {
     width: 300px;
     height: auto;
-  }
-  
-  .comment__shape {
-    background-image: none;
-    border: 1px solid rgb(221, 221, 221);
-    border-radius: 6px;
-    padding-top: 15px;
+    
+    &--small {
+      width: 219px;
+      height: 131px;
+    }
   }
   
   .comment__input:first-child {
