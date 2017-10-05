@@ -73,6 +73,16 @@
       margin-right: 0;
     }
   }
+  
+  .gallery-thumbs .swiper-slide,
+  .gallery-thumbs .swiper-slide img {
+    width: 145px;
+    height: 70px !important;
+  }
+  
+  .gallery-thumbs .swiper-wrapper {
+    margin-top: -105px;
+  }
 }
 //---------------------------------------
 @media @mobile {
@@ -150,6 +160,29 @@
     top: 10px;
     right: 10px;
     background-image: url(../img/icon-cross.svg);
+  }
+  
+  .slider__wrap {
+    justify-content: center;
+  }
+  
+  .gallery-top {
+    margin-right: 20px;
+  }
+  
+  .gallery-thumbs .swiper-slide,
+  .gallery-thumbs .swiper-slide img {
+    width: 100px;
+    height: 50px !important;
+  }
+  
+  .slider__nav-down,
+  .slider__nav-up {
+    width: 100px;
+  }
+  
+  .gallery-thumbs .swiper-wrapper {
+    margin-top: -70px;
   }
 }
 //--------------------------------
@@ -237,5 +270,46 @@
   
   .comment__code {
     margin-top: 10px;
+  }
+  
+  .gallery-thumbs {
+    display: none;
+  }
+  
+  .slider__comment {
+    font-size: 12px;
+    margin-top: 0;
+    
+    span {
+      margin-right: 10px;
+    }
+  }
+  
+  .slider__text {
+    padding: 5px;
+    font-size: 13px;
+  }
+  
+  .gallery-top {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .slider__next {
+    display: block;
+  }
+  
+  .slider__prev {
+    display: block;
+    transform: scale(-1) rotate(90deg);
+  }
+  
+  .portfolio__banner-text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  
+  .slider__title {
+    font-size: 18px;
   }
 }
