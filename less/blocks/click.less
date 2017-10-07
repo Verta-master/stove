@@ -1,0 +1,149 @@
+.click {
+  padding: 15px 20px;
+  padding-right: 15px;
+  border-radius: 4px;
+  border: 1px solid rgb(235, 230, 228);
+  
+  &--border {
+    border: none;
+    padding: 0;
+    max-width: 440px;
+  }
+}
+
+.click__check {
+  display: none;
+}
+
+.click__title {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  color: #009a00;
+  position: relative;
+  cursor: pointer;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    right: 5px;
+    width: 10px;
+    height: 6px;
+    background-image: url(../img/arrow-green.png);
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+  }
+  
+  &--border {
+    cursor: default;
+    
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.click__text {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.click__input {
+  font-size: 13px;
+  font-weight: 400;
+  border-radius: 3px;
+  width: 213px;
+  height: 36px;
+  padding: 0 15px;
+  border: 1px solid rgb(237, 237, 237);
+  
+  &--border {
+    width: 313px;
+  }
+}
+
+.click__btn {
+  border-radius: 6px;
+  background-color: rgb(0, 154, 0);
+  width: 110px;
+  height: 38px;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 5px;
+  
+  &:hover,
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.click__wrap {
+  margin-bottom: 15px;
+}
+
+.click__label {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #666;
+  padding-left: 28px;
+  position: relative;
+  cursor: pointer;
+  max-width: 340px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    border: 1px solid rgb(237, 237, 237);
+  }
+  
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 4px;
+    width: 10px;
+    height: 5px;
+    border-bottom: 2px solid @bg-orange;
+    border-left: 2px solid @bg-orange;
+    transform: rotate(-45deg);
+  }
+}
+
+.click__drop,
+.click__checkbox {
+  display: none;
+}
+
+.click__check:checked ~ .click__drop {
+  display: block;
+}
+
+.click__check:checked + .click__title::after {
+  transform: none;
+}
+
+.click__checkbox:checked + label::after {
+  display: block;
+}
+
+.click__h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: 400;
+}
