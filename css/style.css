@@ -546,6 +546,7 @@
   width: 268px;
   height: 38px;
   margin-bottom: 20px;
+  padding: 0 10px;
 }
 .cart__input--small {
   width: 123px;
